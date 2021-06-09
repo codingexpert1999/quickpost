@@ -1,0 +1,107 @@
+nav{
+    height: 60px !important;
+
+    .navbar-brand{
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .nav-link{
+        color: white;
+        font-size: 1.1rem;
+    }
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+
+    h3{
+        text-align: center;
+    }
+}
+
+.max-height{
+    height: calc(100vh - 60px) !important;
+}
+
+.dashboard{
+    min-height: calc(100vh - 60px);
+    padding-top: 30px;
+
+    .loading-spinner {
+        .spinner-border{
+            width: 25px !important;
+            height: 25px !important;
+            border-width: 3px !important;
+            margin-right: 10px;
+        }
+
+        span{
+            font-size: 1.2rem;
+        }
+    }
+
+    .card{
+        .card-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3{
+                margin-bottom: 0 !important;
+            }
+
+            button:first-child{
+                margin-right: 10px;
+            }
+        }
+
+        .card-body{
+            strong{
+                font-size: 1.1rem;
+            }
+
+            .btn-secondary{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .comment-form{
+        width: 100%;
+
+        .btn-primary{
+            margin-right: 10px;
+        }
+    }
+}
+
+.profile{
+    .profile-container{
+        min-height: 400px;
+
+        .list-group-item:hover{
+            cursor: pointer;
+            color: #0d6efd;
+        }
+
+        .selected-component{
+            margin-left: 80px;
+
+            label{
+                font-weight: 500;
+                font-size: 1.35rem;
+            }
+
+            p{
+                margin-bottom: 0;
+                font-size: 1.2rem;
+            }
+        }
+
+        form button.btn-primary{
+            margin-right: 10px;
+        }
+    }
+}

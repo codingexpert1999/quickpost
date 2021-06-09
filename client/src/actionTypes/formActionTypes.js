@@ -1,0 +1,1 @@
+export const SET_CAN_CLICK_BUTTON = "SET_CAN_CLICK_BUTTON"
