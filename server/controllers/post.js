@@ -52,7 +52,7 @@ exports.updatePost = async (req, res) => {
 
         const {text} = req.body;
 
-        const post = await Post.findByIdAndUpdate(req.post.id, {text}).populate("user", ["username"])
+        const post = await Post.findByIdAndUpdate(req.post.id, {text}).populate("user", ['username'])
 
         post.text = text;
 

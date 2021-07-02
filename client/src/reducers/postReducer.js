@@ -31,11 +31,11 @@ const postReducer = (state=initialState, {type, payload}) => {
         case UPDATE_POST:
             posts = posts.map(post => {
                 if(post._id === payload._id){
+                    payload.comments = post.comments
                     return payload
                 }else{
                     return post;
                 }
-
             })
 
             return {...state, posts}

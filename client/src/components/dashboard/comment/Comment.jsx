@@ -9,6 +9,8 @@ const Comment = ({post, comment}) => {
 
     const {user, token} = useSelector(state => state.user)
 
+    console.log( comment.user._id, user.id)
+
     const createdByMe = user.id === comment.user._id;
 
     return (

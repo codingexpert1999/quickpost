@@ -61,7 +61,7 @@ export const updatePost = (userId, token, postId, text) => {
             const body = JSON.stringify({text});
     
             const res = await axios.put(`${API}/posts/${postId}/${userId}`, body, config)
-    
+
             dispatch({type: UPDATE_POST, payload: res.data});
         } catch (err) {
             toast.error("Post couldn't be updated!")

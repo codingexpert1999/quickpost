@@ -16,6 +16,7 @@ const Dashboard = () => {
     }, [])
 
     useEffect(() => {
+        // console.log("here")
         setCurrentPosts(posts);
     }, [posts])
 
