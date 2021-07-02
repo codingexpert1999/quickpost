@@ -69,7 +69,7 @@ const postReducer = (state=initialState, {type, payload}) => {
         case DELETE_COMMENT:
             posts = posts.map(post => {
                 if(post._id === payload.postId){
-                    post.comments = post.comments.filter(comment => comment._id !== payload.comment._id);
+                    post.comments = post.comments.filter(comment => comment._id !== payload.commentId);
                 }
 
                 return post;

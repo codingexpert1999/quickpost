@@ -147,6 +147,7 @@ export const deleteComment = (userId, token, postId, commentId) => {
 
             dispatch({type: DELETE_COMMENT, payload: {postId, commentId}});
         } catch (err) {
+            console.log(err)
             toast.error("Comment couldn't be deleted");
         }
     }

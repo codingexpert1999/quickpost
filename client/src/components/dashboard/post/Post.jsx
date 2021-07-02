@@ -19,6 +19,7 @@ const Post = ({post, postIndex}) => {
         e.preventDefault();
 
         dispatch(createComment(user.id, token, post._id, commentText));
+        setCommentText("")
 
         setShowCommentForm(false);
     }
